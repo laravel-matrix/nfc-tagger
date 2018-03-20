@@ -1,0 +1,10 @@
+BACKEND="localhost"
+read -e -p "Type the domain name of the backend [$BACKEND]: " BACKEND
+BACKEND=${BACKEND:-localhost}
+printf "\nConfig:\n"
+printf "{\n\t\"r\": {\"h\":\"$BACKEND\"}\n}" | tee config.json
+printf "\nGenerating random key... (Depending on the availability of system entropy, this might take a while)\n\n"
+cat /dev/urandom | tr -cd 'a-f0-9' | head -c 128 > key
+printf "Application Key: "
+cat key
+printf "\n"

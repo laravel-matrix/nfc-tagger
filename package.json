@@ -1,0 +1,18 @@
+{
+  "name": "sqtsnfcrdr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pcsclite": "^0.6.0",
+    "terminal-kit": "^1.15.0",
+    "winston": "^2.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ted van Riel",
+  "license": "GPL-v2.0"
+}
